@@ -1,0 +1,30 @@
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Title</title>
+</head>
+
+<h1>Biti Bots Calculator</h1>
+<form action="main" method="POST">
+    {% csrf_token %}
+
+    Enter parent's eye value: <input type="number" name="p1eye" max="5"><br><br>
+    Enter first parent body value: <input type="number" name="p1body" max="9"><br><br>
+    Enter first parent head value: <input type="number" name="p1head" max="9"><br><br>
+    Enter first parent mouth value: <input type="number" name="p1mouth" max="9"><br><br>
+    Enter first parent mental value: <input type="number" name="p1mental" max="9"><br><br>
+    Enter first parent generation: <input type="number" name="p1generation" max="1000"><br><br>
+    Enter first parent hashrate: <input type="number" name="p1hashrate" max="1000"><br><br>
+    Enter second parent body value: <input type="number" name="p2body" max="9"><br><br>
+    Enter second parent head value: <input type="number" name="p2head" max="9"><br><br>
+    Enter second parent mouth value: <input type="number" name="p2mouth" max="9"><br><br>
+    Enter second parent mental value: <input type="number" name="p2mental" max="9"><br><br>
+    Enter second parent generation: <input type="number" name="p2generation" max="1000"><br><br>
+    Enter second parent hashrate: <input type="number" name="p2hashrate" max="1000"><br><br>
+    <input type="submit" name="" class="btn btn-primary" value="Submit">
+</form>
+
+{% endblock %}
